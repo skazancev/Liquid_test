@@ -27,7 +27,7 @@ def av(x):
 # массив согласных, использованный в этой фразе.
 def get_consonants_set(s):
     consonants = 'bcdfghigklmnpqrstvwxz'
-    set(i for i in s if i in consonants)
+    return set(i for i in s if i in consonants)
 
 
 # 4. Есть словарь. Инвертировать его. Т.е. пары ключ:
