@@ -57,7 +57,7 @@ Task.objects.filter(executor_id=5, created_at__gt=start, created_at__lt=finish, 
 # Числа порядковые. 1, 2, 3, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16, 17 => Найти 10
 
 """SELECT generate_series FROM generate_series(1, 17) WHERE
-    NOT generate_series IN (SELECT x FROM values order by x asc) offset 1 limit 1;
+    NOT generate_series IN (SELECT x FROM values) offset 1 limit 1;
 """
 
 
